@@ -1,31 +1,37 @@
-Visual Taxonomy - Attribute Prediction for E-commerce
+
+
+# **Visual Taxonomy - Attribute Prediction for E-commerce**
 
 A deep learning-based project to classify products into categories and predict their attributes using EfficientNet. Developed as part of the Meesho Hackathon, this project demonstrates high-performance modeling and efficient handling of large-scale datasets.
 
-Table of Contents
-	1.	Overview
-	2.	Dataset
-	3.	Model Architecture
-	4.	Project Structure
-	5.	Setup and Installation
-	6.	Usage
-	7.	Results
-	8.	Contributors
-	9.	License
+---
 
-Overview
+## **Table of Contents**
+1. [Overview](#overview)
+2. [Dataset](#dataset)
+3. [Model Architecture](#model-architecture)
+4. [Project Structure](#project-structure)
+5. [Setup and Installation](#setup-and-installation)
+6. [Usage](#usage)
+7. [Results](#results)
+8. [Contributors](#contributors)
+9. [License](#license)
 
-The Visual Taxonomy project focuses on predicting product attributes for e-commerce platforms using advanced computer vision techniques. The project highlights include:
-	•	EfficientNet-based deep learning model for image classification.
-	•	Preprocessing pipelines for handling large datasets.
-	•	Automated training and inference scripts for streamlined execution.
+---
 
-Dataset
+## **Overview**
+The **Visual Taxonomy** project focuses on predicting product attributes for e-commerce platforms using advanced computer vision techniques. The project highlights include:
+- EfficientNet-based deep learning model for image classification.
+- Preprocessing pipelines for handling large datasets.
+- Automated training and inference scripts for streamlined execution.
 
+---
+
+## **Dataset**
 The dataset is publicly available on Kaggle:
-	•	Meesho Datasets
+- [Meesho Datasets](https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
 
-Folder Structure:
+### Folder Structure:
 
 data/
 ├── images/
@@ -39,15 +45,18 @@ data/
 │   ├── train.csv           # Raw training metadata
 │   ├── test.csv            # Raw testing metadata
 
-Model Architecture
+---
 
-The project leverages EfficientNet for image classification:
-	•	EfficientNet-B7: Pretrained on ImageNet and fine-tuned for the dataset.
-	•	Model Checkpoints:
-	•	efficientnet_model_checkpoint.h5: Intermediate checkpoint during training.
-	•	efficientnet_model_final.h5: Final trained model.
+## **Model Architecture**
+The project leverages **EfficientNet** for image classification:
+- **EfficientNet-B7**: Pretrained on ImageNet and fine-tuned for the dataset.
+- Model Checkpoints:
+  - `efficientnet_model_checkpoint.h5`: Intermediate checkpoint during training.
+  - `efficientnet_model_final.h5`: Final trained model.
 
-Project Structure
+---
+
+## **Project Structure**
 
 visual-taxonomy/
 ├── data/                    # Dataset files
@@ -61,45 +70,47 @@ visual-taxonomy/
 ├── run_training.sh          # Shell script for automation
 ├── README.md                # Project documentation
 
-Setup and Installation
+---
 
-Prerequisites
-	•	Python 3.10 (recommended with Conda environment)
-	•	Git
-	•	Virtual Environment (Conda)
+## **Setup and Installation**
 
-Installation Steps
-	1.	Clone the repository:
+### Prerequisites
+- Python 3.10 (recommended with Conda environment)
+- Git
+- Virtual Environment (Conda)
 
-git clone https://github.com/SamarthShinde/Visual-Taxonomy-.git
-cd Visual-Taxonomy-
+### Installation Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SamarthShinde/Visual-Taxonomy-.git
+   cd Visual-Taxonomy-
+    ```
 
-
-	2.	Set up a Conda environment:
-
+2.	Set up a Conda environment:
+    ```bash
 conda create --name mesho_env python=3.10
 conda activate mesho_env
+    ```
 
-
-	3.	Install dependencies:
-
+3.	Install dependencies:
+    ```bash
 pip install -r requirements.txt
+    ```
 
-
-	4.	Download the dataset from Kaggle and place it in the data/images folder.
+4.	Download the dataset from Kaggle and place it in the data/images folder.
 
 Usage
 
 1. Data Preparation
 
 Run the script to preprocess the dataset and split it into training and validation sets:
-
+    ```bash
 python scripts/prepare_data.py
-
+    ```
 2. Train the Model
-
+    ```bash
 Train the model using:
-
+    ```
 python train.py
 
 Alternatively, automate training with the shell script:
@@ -134,3 +145,4 @@ Additional Notes
 	•	For improved training performance, ensure access to high-end GPUs.
 	•	For any issues or contributions, feel free to open an issue or submit a pull request.
 
+---
