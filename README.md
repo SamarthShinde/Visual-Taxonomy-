@@ -84,13 +84,13 @@ visual-taxonomy/
    ```bash
    git clone https://github.com/SamarthShinde/Visual-Taxonomy-.git
    cd Visual-Taxonomy-
-    ```
+    
 
 2.	Set up a Conda environment:
     ```bash
 conda create --name mesho_env python=3.10
 conda activate mesho_env
-    ```
+    
 
 3.	Install dependencies:
     ```bash
