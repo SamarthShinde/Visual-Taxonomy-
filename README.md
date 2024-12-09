@@ -30,7 +30,7 @@ The dataset is publicly available on Kaggle:
 - [Meesho Datasets](https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
 
 ### Folder Structure:
-'''bash
+```
 Meesho_Hack/
 ├── data/                    # Contains dataset files
 │   ├── images/              # Images used for training and testing
@@ -68,7 +68,7 @@ Meesho_Hack/
 ├── requirements.txt         # Dependencies for the project
 ├── run_training.sh          # Shell script for automating training
 
-'''bash
+```
 ---
 
 ## **Model Architecture**
@@ -81,7 +81,7 @@ The project leverages **EfficientNet** for image classification:
 ---
 
 ## **Project Structure**
-
+```
 Meesho_Hack/
 ├── data/                    # Dataset files
 ├── encoders/                # Encoded labels
@@ -93,7 +93,7 @@ Meesho_Hack/
 ├── requirements.txt         # Dependencies
 ├── run_training.sh          # Shell script for automation
 ├── README.md                # Project documentation
-
+```
 ---
 
 ## **Setup and Installation**
@@ -108,19 +108,20 @@ Meesho_Hack/
    ```bash
    git clone https://github.com/SamarthShinde/Visual-Taxonomy-.git
    cd Visual-Taxonomy-
+   ```
 
-	2.	Set up a Conda environment:
-
+2.	Set up a Conda environment:
+```bash
 conda create --name mesho_env python=3.10
 conda activate mesho_env
+```
 
-
-	3.	Install dependencies:
-
+3.	Install dependencies:
+```bash
 pip install -r requirements.txt
+```
 
-
-	4.	Download the dataset from Kaggle and place it in the data/images folder.
+4.	Download the dataset from Kaggle and place it in the data/images folder.
 
 Usage
 
