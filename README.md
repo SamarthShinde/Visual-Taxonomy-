@@ -1,4 +1,4 @@
-
+Here’s the corrected README.md with the proper structure and formatting that you can directly copy-paste into your editor. This version ensures all code blocks, lists, and sections render correctly on GitHub.
 
 # **Visual Taxonomy - Attribute Prediction for E-commerce**
 
@@ -84,33 +84,32 @@ visual-taxonomy/
    ```bash
    git clone https://github.com/SamarthShinde/Visual-Taxonomy-.git
    cd Visual-Taxonomy-
-    
 
-2.	Set up a Conda environment:
-    ```bash
+	2.	Set up a Conda environment:
+
 conda create --name mesho_env python=3.10
 conda activate mesho_env
-    
 
-3.	Install dependencies:
-    ```bash
+
+	3.	Install dependencies:
+
 pip install -r requirements.txt
-    ```
 
-4.	Download the dataset from Kaggle and place it in the data/images folder.
+
+	4.	Download the dataset from Kaggle and place it in the data/images folder.
 
 Usage
 
 1. Data Preparation
 
 Run the script to preprocess the dataset and split it into training and validation sets:
-    ```bash
+
 python scripts/prepare_data.py
-    ```
+
 2. Train the Model
-    ```bash
+
 Train the model using:
-    ```
+
 python train.py
 
 Alternatively, automate training with the shell script:
@@ -133,7 +132,8 @@ Results
 	•	Recommendation: Use high-end GPUs for optimal training performance.
 
 Contributors
-	•	Samarth Shinde
+	•	Samarth Shinde (https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
+
 GitHub Profile
 Email: Samarth.shinde505@gmail.com
 
@@ -146,3 +146,4 @@ Additional Notes
 	•	For any issues or contributions, feel free to open an issue or submit a pull request.
 
 ---
+
