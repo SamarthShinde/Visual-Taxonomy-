@@ -128,26 +128,27 @@ Usage
 1. Data Preparation
 
 Run the script to preprocess the dataset and split it into training and validation sets:
-
+```
 python scripts/prepare_data.py
-
+```
 2. Train the Model
 
 Train the model using:
-
+```
 python train.py
-
+```
 Alternatively, automate training with the shell script:
-
+```
 bash run_training.sh
-
+```
 3. Run Inference
 
 Make predictions on the test dataset:
-
+```
 python inference.py
-
+```
 Results
+```
 	•	F1 Score: 0.35138
 	•	Model Accuracy: 92.78%
 	•	Epochs: 100
@@ -155,13 +156,14 @@ Results
 	•	GPU Setup: Tesla V100 32GB (4 GPUs)
 	•	Training Time: ~3 days
 	•	Recommendation: Use high-end GPUs for optimal training performance.
-
+```
 Contributors
+```
 	•	[Samarth Shinde](https://github.com/SamarthShinde)
 
 GitHub Profile
 Email: Samarth.shinde505@gmail.com
-
+```
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
