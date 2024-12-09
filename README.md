@@ -1,5 +1,3 @@
-Here’s the corrected README.md with the proper structure and formatting that you can directly copy-paste into your editor. This version ensures all code blocks, lists, and sections render correctly on GitHub.
-
 # **Visual Taxonomy - Attribute Prediction for E-commerce**
 
 A deep learning-based project to classify products into categories and predict their attributes using EfficientNet. Developed as part of the Meesho Hackathon, this project demonstrates high-performance modeling and efficient handling of large-scale datasets.
@@ -32,19 +30,45 @@ The dataset is publicly available on Kaggle:
 - [Meesho Datasets](https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
 
 ### Folder Structure:
+'''
+Meesho_Hack/
+├── data/                    # Contains dataset files
+│   ├── images/              # Images used for training and testing
+│   │   ├── train_images/    # Training images
+│   │   ├── test_images/     # Testing images
+│   ├── processed/           # Processed data for training/validation
+│   │   ├── train_split.csv  # Training split metadata
+│   │   ├── valid_split.csv  # Validation split metadata
+│   │   ├── prediction.csv   # Predictions for the dataset
+│   ├── raw/                 # Raw metadata files
+│   │   ├── train.csv        # Raw training metadata
+│   │   ├── test.csv         # Raw testing metadata
+│   ├── train_processed.csv  # Fully processed training data
+│   ├── val_processed.csv    # Fully processed validation data
+├── encoders/                # Encoded labels
+│   ├── label_encoders.joblib  # Saved label encoder
+│   ├── train_encoded.csv    # Encoded training data
+│   ├── val_encoded.csv      # Encoded validation data
+├── models/                  # Trained models and logs
+│   ├── logs/                # Training logs
+│   ├── efficientnet_model_checkpoint.h5  # Intermediate model checkpoint
+│   ├── efficientnet_model_final.h5       # Final trained model
+├── scripts/                 # Supporting Python scripts
+│   ├── prepare_data.py      # Prepares and splits datasets
+│   ├── encode_labels.py     # Handles label encoding
+│   ├── category_attributes_mapping.py  # Maps product categories to attributes
+│   ├── train.py             # Main training script
+│   ├── inference.py         # Script for running inference
+├── submission/              # Submission-related files
+│   ├── sample_submission.csv  # Example submission format
+│   ├── submission_1.csv     # First submission results
+│   ├── submission_2.csv     # Second submission results
+│   ├── submission.csv       # Final submission file
+├── README.md                # Project documentation
+├── requirements.txt         # Dependencies for the project
+├── run_training.sh          # Shell script for automating training
 
-data/
-├── images/
-│   ├── train_images/       # Training images
-│   ├── test_images/        # Testing images
-├── processed/
-│   ├── train_split.csv     # Training split metadata
-│   ├── valid_split.csv     # Validation split metadata
-│   ├── prediction.csv      # Predictions for the dataset
-├── raw/
-│   ├── train.csv           # Raw training metadata
-│   ├── test.csv            # Raw testing metadata
-
+'''
 ---
 
 ## **Model Architecture**
@@ -58,7 +82,7 @@ The project leverages **EfficientNet** for image classification:
 
 ## **Project Structure**
 
-visual-taxonomy/
+Meesho_Hack/
 ├── data/                    # Dataset files
 ├── encoders/                # Encoded labels
 ├── models/                  # Trained models and logs
@@ -132,7 +156,7 @@ Results
 	•	Recommendation: Use high-end GPUs for optimal training performance.
 
 Contributors
-	•	Samarth Shinde (https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
+	•	[Samarth Shinde](https://github.com/SamarthShinde)
 
 GitHub Profile
 Email: Samarth.shinde505@gmail.com
