@@ -30,7 +30,7 @@ The dataset is publicly available on Kaggle:
 - [Meesho Datasets](https://www.kaggle.com/datasets/samarth060803/meesho-datasets/data)
 
 ### Folder Structure:
-'''
+'''bash
 Meesho_Hack/
 ├── data/                    # Contains dataset files
 │   ├── images/              # Images used for training and testing
@@ -68,7 +68,7 @@ Meesho_Hack/
 ├── requirements.txt         # Dependencies for the project
 ├── run_training.sh          # Shell script for automating training
 
-'''
+'''bash
 ---
 
 ## **Model Architecture**
